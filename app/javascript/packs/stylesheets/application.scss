@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #677788;
+  background-color: #f7faff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {color: #1e2022;}
+.navbar-brand {font-weight: 600;}
