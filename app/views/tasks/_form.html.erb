@@ -11,19 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group mb-2">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control form-control-lg', autofocus: true %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
+
+  <div class="form-group mb-4">
     <%= f.label :status %><br />
-    <%= f.select :status, Task::STATUS_OPTIONS %>
+    <%= f.select :status, Task::STATUS_OPTIONS, {}, class: "custom-select custom-select-lg" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  
+  <%= f.submit class: 'btn btn-lg btn-success' %>
+
 <% end %>

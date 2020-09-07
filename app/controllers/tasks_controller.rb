@@ -1,16 +1,7 @@
 class TasksController < ApplicationController
   before_action :authenticate_user!
   before_action :set_project
-  before_action :set_task, only: [:show, :edit, :update, :destroy]
-
-  # GET projects/1/tasks
-  def index
-    @tasks = @project.tasks
-  end
-
-  # GET projects/1/tasks/1
-  def show
-  end
+  before_action :set_task, only: [:edit, :update, :destroy]
 
   # GET projects/1/tasks/new
   def new
@@ -60,6 +51,6 @@ class TasksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def task_params
-      params.require(:task).permit(:name, :description, :status, :project_id)
+      params.require(:task).permit(:name, :status, :project_id)
     end
 end

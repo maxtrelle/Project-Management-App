@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'pages/about'
   get 'pages/contacts'
   resources :projects do
-    resources :tasks
+    resources :tasks, except: [:index, :show]
   end
   
   devise_for :users
