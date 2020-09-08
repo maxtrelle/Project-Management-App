@@ -7,3 +7,5 @@ require("channels")
 import "bootstrap";
 import "./stylesheets/application.scss";
 
+
+import "controllers"

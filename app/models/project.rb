@@ -6,7 +6,7 @@ class Project < ApplicationRecord
   validates :name,  presence: true, uniqueness: true,
                     length: { minimum: 3 }
 
-  def badge_color
+  def task_color
     case status
     when 'not started'  then 'danger'
     when 'in progress'  then 'warning'

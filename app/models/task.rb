@@ -14,12 +14,20 @@ class Task < ApplicationRecord
     ['Complete',    'complete'   ]
   ]
 
-  def badge_color
+  def task_color
     case status
     when 'not started' then 'danger'
     when 'in progress' then 'warning'
     when 'complete'    then 'success'
     end
+  end
+
+  def readable_status
+    case status
+    when 'not started' then 'Not started'
+    when 'in progress' then 'In progress'
+    when 'complete'    then 'Complete'
+    end  
   end
 
   def status_bg_hover

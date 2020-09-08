@@ -14,9 +14,13 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+# My gems
 gem 'devise'
 gem 'nested_scaffold'
 gem 'devise-bootstrap-views', '~> 1.0'
+gem "stimulus_reflex", "~> 3.2"
+# My gems
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
