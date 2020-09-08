@@ -24,10 +24,12 @@
 
             <div class="col-md-7 col-lg-8">
               <div class="mb-3">
-                <span class="badge badge-<%= project.task_color %>"><%= project.status %> <%= project.percent_complete %>%</span>
+                <span class="badge badge-<%= project.task_color %>">
+                  <%= project.status %>
+                  <span class="badge badge-light ml-1"><%= project.total_complete %> / <%= project.total_tasks %></span>
+                </span>
                 <small class="text-secondary">
-                   complete
-                  (<%= project.total_complete %> / <%= project.total_tasks %>)
+                  <%= project.percent_complete %>% complete
                 </small>
               </div>
               

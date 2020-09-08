@@ -24,3 +24,11 @@ h1, h2, h3, h4, h5, h6 {color: #1e2022;}
   transition: all 0.3s ease;
   &:hover {background-color: #c3e6cb; color: #155724;}
 }
+
+#tasks-list {
+  list-style: none;
+  padding-left: 0;
+  li {
+    cursor: grab;
+  }
+}
