@@ -1,8 +1,7 @@
 # Task manager app
 
-I'm a person who passionate about my own productivity. I want to
-manage my tasks and projects more effectively. I need a simple tool that
-supports me in controlling my task-flow.
+Manage tasks and projects more effectively. Simple tool that
+supports you in controlling your task-flow.
 
 **Functional requirements**
 - Create/​​update/​​delete projects 
