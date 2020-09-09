@@ -8,21 +8,21 @@ class Project < ApplicationRecord
 
   def task_color
     case status
-    when 'not started'  then 'danger'
-    when 'in progress'  then 'warning'
+    when 'not-started'  then 'danger'
+    when 'in-progress'  then 'warning'
     when 'complete'     then 'success'
     end
   end
 
   def status
-    return 'not started' if tasks.none?
+    return 'not-started' if tasks.none?
 
     if tasks.all? { |task| task.complete? }
       'complete'
     elsif tasks.any? { |task| task.in_progress? || task.complete? }
-      'in progress'
+      'in-progress'
     else
-      'not started'
+      'not-started'
     end
   end
 

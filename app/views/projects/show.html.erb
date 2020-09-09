@@ -43,8 +43,9 @@
       <% end %>
 
       <div class="input-group my-4">
-        <%= f.hidden_field :status, value: 'not-started' %>
         <%= f.text_field :name, class: 'form-control form-control-lg', placeholder: "Start typing here to create a task..." %>
+        <%= f.hidden_field :status, value: 'not-started' %>
+
         <div class="input-group-append">
           <%= button_tag type: 'submit', class: 'btn btn-success' do %>
             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
