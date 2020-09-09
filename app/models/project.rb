@@ -8,14 +8,14 @@ class Project < ApplicationRecord
 
   def task_color
     case status
-    when 'not-started'  then 'danger'
-    when 'in-progress'  then 'warning'
-    when 'complete'     then 'success'
+    when 'not-started' then 'danger'
+    when 'in-progress' then 'warning'
+    when 'complete'    then 'success'
     end
   end
 
   def status
-    return 'not-started' if tasks.none?
+    return :not_started if tasks.none?
 
     if tasks.all? { |task| task.complete? }
       'complete'
@@ -28,7 +28,6 @@ class Project < ApplicationRecord
 
   def percent_complete
     return 0 if tasks.none?
-
     ((total_complete.to_f / total_tasks) * 100).round
   end
 
