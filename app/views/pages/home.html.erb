@@ -1,2 +1,65 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+    <!-- Hero Section -->
+
+<header class="container height-100 mb-5">
+  <div class="row justify-content-lg-between mb-7">
+    <div class="col-md-7 col-lg-5">
+      <!-- Info -->
+      <div class="mb-5">
+        <h1 class="display-4">A better way to boost productivity</h1>
+        <p>Manage tasks and projects more effectively. Simple tool that
+supports you in controlling your task-flow.</p>
+      </div>
+
+      <div class="mb-3">
+        <%= link_to "Get Started", projects_path, class: 'btn btn-lg btn-primary mr-3 mb-2' %>
+        <%= link_to pages_about_path, class: 'btn btn-link btn-lg mb-2 mb-sm-0' do %>
+          About us
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        <% end %>
+      </div>
+      <!-- End Info -->
+    </div>
+
+    <div class="col-md-5 d-none d-md-inline-block">
+      <!-- SVG Illustration -->
+      <figure>
+        <%= image_tag('project-img.svg', class: 'img-fluid', alt: 'A better way to boost productivity') %>
+      </figure>
+      <!-- End SVG Illustration -->
+    </div>
+  </div>
+</header>
+<!-- End Hero Section -->
+
+
+
+<section class="container py-5 height-100">
+
+  <div class="row">
+    <div class="col-lg-4">
+      <figure class="width-150 mb-5">
+        <%= image_tag('modern_design.svg', class: 'img-fluid', alt: 'Modern design') %>
+      </figure>
+      <h3>Modern Design</h3>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <figure class="width-150 mb-5">
+        <%= image_tag('drag_and_drop.svg', class: 'img-fluid', alt: 'Drag and drop') %>
+      </figure>
+      <h3>Drag and drop</h3>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <figure class="width-150 mb-5">
+        <%= image_tag('status.svg', class: 'img-fluid', alt: 'Choose deadline') %>
+      </figure>
+      <h3>Choose deadline</h3>
+    </div><!-- /.col-lg-4 -->      
+  </div><!-- /.row -->
+
+</section><!-- /.container -->
+
+
+ 
+

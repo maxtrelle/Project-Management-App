@@ -32,3 +32,33 @@ h1, h2, h3, h4, h5, h6 {color: #1e2022;}
     cursor: grab;
   }
 }
+
+// Errors
+#error_explanation {
+  background-color: #f5c6cb; 
+  color: #721c24;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#error_explanation h2 {color: #721c24;}
+
+.field_with_errors {
+  label {
+    color: #d01612;
+    font-weight: 600;
+  }
+  input, select {
+    border: 2px solid #d01612;
+  }
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.width-150 {width: 150px; height: 150px;}
+.height-100 {padding-top: 100px; padding-bottom: 100px;}

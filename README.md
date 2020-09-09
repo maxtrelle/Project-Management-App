@@ -1,24 +1,30 @@
-# README
+# Task manager app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I'm a person who passionate about my own productivity. I want to
+manage my tasks and projects more effectively. I need a simple tool that
+supports me in controlling my task-flow.
 
-Things you may want to cover:
+**Functional requirements**
+- Create/​​update/​​delete projects 
+- Add tasks to my project
+- Update/​​delete tasks
+- Prioritize tasks into a project 
+- Choose deadline for my task 
+- Mark a task as 'complete'
 
-* Ruby version
+**Technical requirements**
+1. WEB application 
+2. Client side used: HTML, CSS, Boorstrap, JavaScript, jQuery, SortableJS, Stimulus, Webpack
+3. For a server side uses Ruby language
+4. App have a client side and server side validation
+5. Responsive Web Design
 
-* System dependencies
+**Additional requirements**
+- WEB application used AJAX technology, load and submit data without reloading a page.
+- User authentication solution and a user only have access to their own projects and tasks.
 
-* Configuration
+## SQL task
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Given tables:**
+1. tasks (id, name, status, project_id)
+2. ​projects (id, name) 
