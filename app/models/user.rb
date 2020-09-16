@@ -6,11 +6,8 @@ class User < ApplicationRecord
 
   has_many :projects
 
-  validates :notification_email,  presence: true, 
-                                  format: { with: Devise.email_regexp }
-  validates :public_email,        presence: true, 
-                                  uniqueness: true, 
-                                  format: { with: Devise.email_regexp }, 
-                                  allow_blank: true
+  validates :email,  presence: true, 
+                     uniqueness: true, 
+                     format: { with: Devise.email_regexp }
 
 end
