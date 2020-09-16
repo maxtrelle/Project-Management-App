@@ -10,7 +10,7 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Capistrano for deployment
@@ -24,7 +24,8 @@ gem 'rubocop-rspec', require: false
 gem 'devise'
 gem 'nested_scaffold'
 gem 'devise-bootstrap-views', '~> 1.0'
-gem "stimulus_reflex", "~> 3.2"
+gem "stimulus_reflex", "3.3.0.pre4"
+gem "view_component"
 # My gems
 
 group :development, :test do

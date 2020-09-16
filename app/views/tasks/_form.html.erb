@@ -16,9 +16,14 @@
     <%= f.text_field :name, class: 'form-control form-control-lg', autofocus: true, required: true %>
   </div>
 
-  <div class="form-group mb-4">
+  <div class="form-group mb-2">
     <%= f.label :status %><br />
     <%= f.select :status, Task::STATUS_OPTIONS, {}, class: "custom-select custom-select-lg" %>
+  </div>
+
+  <div class="form-group mb-4">
+    <%= f.label :deadline %>
+    <%= f.date_field :deadline, class: 'form-control form-control-lg', default: Time.now.strftime('%d %b %Y') %>
   </div>
   
   <%= f.submit class: 'btn btn-lg btn-success' %>

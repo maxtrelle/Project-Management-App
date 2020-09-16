@@ -110,7 +110,7 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  config.action_mailer.default_url_options = { host: 'https://damp-dusk-15057.herokuapp.com/', port: 5000 }
-
+  config.action_mailer.default_url_options = { host: 'pm-manager-app.herokuapp.com' }
+  config.action_controller.default_url_options = {host: "pm-manager-app.herokuapp.com"}
 
 end
