@@ -80,6 +80,11 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
+
+  config.action_mailer.default_url_options = { host: 'pm-manager-app.herokuapp.com' }
+  config.action_controller.default_url_options = { host: "pm-manager-app.herokuapp.com" }
+
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
@@ -110,7 +115,5 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  config.action_mailer.default_url_options = { host: 'pm-manager-app.herokuapp.com' }
-  config.action_controller.default_url_options = { host: "pm-manager-app.herokuapp.com" }
 
 end
