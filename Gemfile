@@ -26,6 +26,8 @@ gem 'nested_scaffold'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem "stimulus_reflex", "3.3.0.pre4"
 gem "view_component"
+gem "redis", ">= 4.0", :require => ["redis", "redis/connection/hiredis"]
+gem "hiredis"
 # My gems
 
 group :development, :test do
