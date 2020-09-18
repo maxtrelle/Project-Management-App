@@ -89,7 +89,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_controller.default_url_options = {host: "https://pm-manager-app.herokuapp.com", port: 5000}
+  config.action_controller.default_url_options = {host: "https://pm-manager-app.herokuapp.com"}
 
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
