@@ -80,11 +80,6 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-
-  config.action_mailer.default_url_options = { host: 'pm-manager-app.herokuapp.com' }
-  config.action_controller.default_url_options = { host: "pm-manager-app.herokuapp.com" }
-
-
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
@@ -93,6 +88,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_controller.default_url_options = {host: "https://pm-manager-app.herokuapp.com", port: 5000}
 
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
