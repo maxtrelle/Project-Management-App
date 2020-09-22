@@ -4,12 +4,7 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  config.cache_store = :redis_cache_store, {driver: :hiredis, url: ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" }}
-  config.session_store :cache_store,
-    key: "_session",
-    compress: true,
-    pool_size: 5,
-    expire_after: 1.year
+  config.cache_store = :memory_store
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
